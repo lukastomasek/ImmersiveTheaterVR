@@ -1,11 +1,8 @@
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js';
 
 
-var scene = new THREE.Scene();
-
+const animateLogo = () => gsap.to(".logo", {duration: 1.2, x: 50, ease: 'sine'})
 
 
 
 
-window.addEventListener('mousemove', onMouseMove);
-render();
+animateLogo()

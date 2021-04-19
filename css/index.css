@@ -50,6 +50,8 @@ footer p:hover{
 
 .logo{
   height: 40px;
+  position: relative;
+  left: -5rem;
 }
 .header{
   color: white;
