@@ -17,8 +17,8 @@ const animateMainP = () => {
 }
 
 
-animateLogo()
+// animateLogo()
 
-animateMainLogo()
+// animateMainLogo()
 
-animateMainP()
+// animateMainP()
