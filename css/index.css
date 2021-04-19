@@ -36,7 +36,7 @@ h1 span{
   color:var(--primary-col)
 }
 
-#main-p{
+.main-p{
   text-align: center;
   color:white;
   font-weight: lighter;
