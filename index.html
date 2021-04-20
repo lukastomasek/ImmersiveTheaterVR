@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/work.css">
   <title>Immersive Theatre VR</title>
 </head>
 
@@ -14,8 +15,10 @@
        <li><img class="logo" src="images/logo.png" alt="logo"></li>
        <li><p class="header">Immersive Theatre <span>VR</span></p></li>
       <ul class="detials">
-        <li><a href="#">about</a></li>
-        <li><a href="#">video</a></li>
+        <li><button id="about-btn">about</button></li>
+        <li><button>work</button></li>
+        <li><button>video</button></li>
+        <li><button>creatord</button></li>
       </ul>
      </ul>
   
@@ -23,10 +26,19 @@
    <main>
       <h1 class="main-logo">immersive theatre <span>VR</span></h1>
       <p class="main-p">Experience Virtual Reality Content In New Way !</p>
+      <section class="about">
+          <h2>about</h2>
+          <article>
+            Immersive theatre VR is concept that aims to merge virtual reality
+            With classic theatre to create unique experience.<br>
+            People can enjoy watching virtual reality simulation in home or 
+            Public spaces such as shopping malls with Immersive Theatre VR Chair. 
+          </article>
+      </section>
    </main>
 
    <footer>
-     <p>&copy; all rights reserved.</p>
+     <p>&copy;2021 all rights reserved.</p>
    </footer>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
@@ -49,12 +61,26 @@
           ease:'sine'
         })
       }
+      const animateAboutSection = () => {
+        gsap.from(".about",{
+          opacity: 0,  
+          duration: 2,
+          ease:'sine',
+          delay: 2.5
+        })
+      }
+
+      document.getElementById('about-btn').addEventListener('click',()=>{
+        let ele = document.querySelector(".about");
+        ele.scrollIntoView({ block: "end", behavior: "smooth" });
+        console.log('clicked')
+      })
 
       animateLogo()
-
       animateMainLogo()
-
       animateMainP()
+      animateAboutSection()
+
    </script>
 </body>
 
