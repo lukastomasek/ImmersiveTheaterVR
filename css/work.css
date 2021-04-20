@@ -13,7 +13,117 @@
 body{
   font-family: 'Roboto',sans-serif;
 }
+img{
+  height:40rem;
+  transition: 0.2s ease-in-out all;
+}
+
+img:hover{
+  cursor: pointer;
+  /* transform: scale(1.25); */
+}
 
 .work{
   margin-top: 15rem;
+}
+
+h3{
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+   margin-bottom: 2rem;
+}
+
+.moodboards ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  background-color: var(--primary-col);
+}
+
+.moodboards ul li img {
+  height:20rem;
+  margin: 0 -4rem 0 -4rem;
+  transition: 0.2s ease-in-out all;
+}
+
+.screens ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.screens ul li img{
+  height:20rem;
+  transition: 0.2s ease-in-out all;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui-kit ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  background-color: var(--primary-col);
+}
+.ui-kit ul li img{
+  height: 20rem;
+  transition: 0.2s ease-in-out all;
+}
+.wireframes div, .system-map div{
+  background-color: var(--primary-col);
+}
+.wireframes div img, .system-map div img{
+  margin-left: 8rem;
+}
+
+.slideshow-container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-shadow: 10px 10px 34px -1px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 10px 10px 34px -1px rgba(0,0,0,0.4);
+  -moz-box-shadow: 10px 10px 34px -1px rgba(0,0,0,0.4);
+  background: var(--primary-col);
+}
+
+.slide-img{
+  height: 35rem;
+}
+
+.slides-left{
+  display: none;
+}
+
+.slide-btns{
+  position: absolute;
+  bottom:1rem;
+  left: 45.5%;
+  background: var(--primary-col);
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-btns a:hover{
+  cursor: pointer;
+  color: var(--secondary-col);
+}
+
+.prev{
+  position: relative;
+  right: 2rem;
+}
+.next{
+  position: relative;
+  left: 2rem;
+}
+.numbertext{
+  text-align: center;
+  font-family: 'Roboto';
 }

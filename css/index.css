@@ -78,9 +78,10 @@ footer p{
   color: white;
   font-size: 1.2rem;
   text-align: center;
-  padding-top: 1.2rem;
   text-transform: capitalize;
   transition: all ease-in-out .2s;
+  margin-bottom: 1.2rem;
+  padding-top:.25rem;
 }
 
 footer p:hover{
@@ -144,7 +145,8 @@ footer p:hover{
   color: var(--secondary-col)
 }
 
-.about{
+.about,
+.work{
   margin-top: 15rem;
   font-family: 'Roboto';
   font-size: 1.2rem;
@@ -153,8 +155,11 @@ footer p:hover{
   text-align: left;
   font-weight: lighter;
   line-height: 2rem;
+  padding-bottom: 15rem;
 }
-.about article{
+
+.about article,
+.work article{
   margin-top: 1.5rem;
   padding-left: 2.5rem;
 }
