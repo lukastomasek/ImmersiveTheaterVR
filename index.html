@@ -20,16 +20,15 @@
 <body>
    <nav class="navigation">
      <ul>
-       <li><img class="logo" src="images/logo.png" alt="logo"></li>
+       <li><img class="logo" src="images/logo.png" alt="logo"> <a class="home-link"  href="index.html">link</a> </li>
        <li><p class="header">Immersive Theatre <span>VR</span></p></li>
       <ul class="detials">
         <li><button id="about-btn">about</button></li>
         <li><button id="work-btn">work</button></li>
-        <li><button id="renders-btn">3d renders</button></li>
-        <li><button>creators</button></li>
+        <li><button id="renders-btn">interactive video</button></li>
+        <li><button id="team-btn">teams</button></li>
       </ul>
      </ul>
-  
    </nav>
  <main>
       <h1 class="main-logo">immersive theatre <span>VR</span></h1>
@@ -52,6 +51,10 @@
               <li><img src="Assets/moodboard-2.png" alt="mood-board"></li>
               <li><img src="Assets/moodboard-3.png" alt="mood-board"></li>
             </ul>
+        </div>
+        <div class="wireframes">
+          <h3>VR  immersive chair sketch</h3>
+          <div> <img src="Assets/chair-sketch.png" alt="sketch" style="background-color: white;" ></div>
         </div>
         <div class="ui-kit">
           <h3>concepts</h3>
@@ -169,7 +172,8 @@
         </div>
       <section class="video">
           <div class="interactive">
-            <iframe src="https://video.eko.com/v/A67OnE?autoplay=true&fbclid=IwAR1L8hh9V7VmQHBtMkEHqFp2kMRZtfALD-YK2tfXhXnLsaAnsIimzodfKcQ/embed" 
+            <iframe 
+            src="https://video.eko.com/v/A67OnE?autoplay=true&fbclid=IwAR1L8hh9V7VmQHBtMkEHqFp2kMRZtfALD-YK2tfXhXnLsaAnsIimzodfKcQ/embed" 
             frameborder="0"
             title="Immersive Theatre VR"
             allowfullscreen
@@ -224,7 +228,9 @@
 
 const $about = document.getElementById('about-btn')
 const $work = document.getElementById('work-btn')
-const $renders = document.getElementById('renders-btn')
+const $video = document.getElementById('renders-btn')
+const $team = document.getElementById('team-btn')
+const teamURL = 'team.html'
 
 let slideIndex = 1
 showSlides(slideIndex)
@@ -263,12 +269,17 @@ $work.addEventListener('click',()=>{
   let ele = document.querySelector(".work");
   ele.scrollIntoView({ block: "start", behavior: "smooth" });   
 })
-$renders.addEventListener('click',()=>{
-  let ele = document.querySelector(".renders");
+$video.addEventListener('click',()=>{
+  let ele = document.querySelector(".interactive");
   ele.scrollIntoView({ block: "start", behavior: "smooth" });   
 })
 
-   </script>
+$team.addEventListener('click',()=>{
+  window.location.href = teamURL
+  console.log(teamURL)
+})
+
+</script>
 </body>
 
 </html>
