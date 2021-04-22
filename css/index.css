@@ -148,7 +148,6 @@ footer p:hover{
 .header span{
   color: var(--secondary-col)
 }
-
 .about,
 .work{
   margin-top: 15rem;
@@ -175,11 +174,13 @@ footer p:hover{
   background-color: var(--primary-col);
   color: white;
   font-family: 'Roboto';
+  transition: 0.2s all ease-in-out;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   cursor: pointer;
+  transform: scale(1.1);
 }
 .container{
   padding: 2px 16px;

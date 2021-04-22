@@ -34,7 +34,7 @@
       <ul>
         <li>
           <div class="card">
-            <img src="images/lukas-tomasek.jpeg" alt="Avatar" style="width:100%">
+            <img src="images/lukas-tomasek.jpeg" alt="profile" style="width:100%">
             <div class="container">
               <h4><b>Lukas Tomasek</b></h4> 
               <p>Lead Developer & Designer</p> 
@@ -48,14 +48,14 @@
         </li>
         <li>
           <div class="card">
-            <img src="images/lukas-tomasek.jpeg" alt="Avatar" style="width:100%">
+            <img src="images/lukas-tomasek.jpeg" alt="profile" style="width:100%">
             <div class="container">
-              <h4><b>Lukas Tomasek</b></h4> 
-              <p>Lead Developer & Designer</p> 
+              <h4><b>Ahmed Mohamed</b></h4> 
+              <p>UX/UI Designer & Motion Designer</p> 
                <ol class="info">
-                 <li> <a href="https://www.lukastomasek.com/">Portfolio website</a></li>
-                 <li> <a href="https://www.linkedin.com/in/lukas-tomasek-7826161a5/">linkedin</a></li>
-                 <li> <a href="https://github.com/lukastomasek">github</a></li>
+                 <li> <a href="https://ahmedhusam7oss.wixsite.com/mysite">Portfolio website</a></li>
+                 <li> <a href="https://www.linkedin.com/in/ahmed-husam-eldin-78788a188/">linkedin</a></li>
+                 <!-- <li> <a href="https://github.com/lukastomasek">github</a></li> -->
                </ol>
             </div>
           </div>
@@ -72,6 +72,20 @@
   <script>
      const animateLogo = () => gsap.to(".logo", {duration: 1.5, x: 50, ease: 'sine'})
     animateLogo()
+
+    const animateCard = () => gsap.from(".container",{ 
+      delay:1.5,
+      opacity:0.0,
+      duration: 4,
+      ease:'sine'
+    })
+    
+    animateCard()
+
+    const bringCardsInView = () => {document.querySelector('.container').scrollIntoView({block:'end', behaviour:'smooth'})}
+
+    window.addEventListener('DOMContentLoaded', bringCardsInView)
+
   </script>
 </body>
 </html>
