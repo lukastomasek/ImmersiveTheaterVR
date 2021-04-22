@@ -34,7 +34,7 @@
       <ul>
         <li>
           <div class="card">
-            <img src="images/lukas-tomasek.jpeg" alt="profile" style="width:100%">
+            <!-- <img src="images/lukas-tomasek.jpeg" alt="profile" style="width:100%"> -->
             <div class="container">
               <h4><b>Lukas Tomasek</b></h4> 
               <p>Lead Developer & Designer</p> 
@@ -48,7 +48,7 @@
         </li>
         <li>
           <div class="card">
-            <img src="images/lukas-tomasek.jpeg" alt="profile" style="width:100%">
+            <!-- <img class="ahmed" src="images/ahmed.png" alt="profile"  style="width:100%"> -->
             <div class="container">
               <h4><b>Ahmed Mohamed</b></h4> 
               <p>UX/UI Designer & Motion Designer</p> 
@@ -70,12 +70,12 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script>
-     const animateLogo = () => gsap.to(".logo", {duration: 1.5, x: 50, ease: 'sine'})
+    const animateLogo = () => gsap.to(".logo", {duration: 1.5, x: 50, ease: 'sine'})
     animateLogo()
 
     const animateCard = () => gsap.from(".container",{ 
       delay:1.5,
-      opacity:0.0,
+      opacity:0.0, 
       duration: 4,
       ease:'sine'
     })

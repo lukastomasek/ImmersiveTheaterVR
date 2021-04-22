@@ -169,12 +169,13 @@ footer p:hover{
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 60%;
+  width: 20rem;
   height: 30rem;
   background-color: var(--primary-col);
   color: white;
   font-family: 'Roboto';
   transition: 0.2s all ease-in-out;
+  margin:1rem;
 }
 
 .card:hover {
@@ -188,7 +189,14 @@ footer p:hover{
 .teams{
   padding-top: 4rem;
   padding-bottom: 10rem;
-  padding-left: 15rem;
+ 
+}
+h4{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  color:var(--secondary-col);
 }
 .teams ul{
   list-style: none;
@@ -212,4 +220,5 @@ footer p:hover{
   padding-top: .2rem;
   text-transform: capitalize;
 }
+
 
