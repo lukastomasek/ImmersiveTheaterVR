@@ -133,31 +133,66 @@ h3{
 }
 
 @media only screen and (max-width: 768px) {
-.moodboards ul li{
-  display:grid;
-  grid-template-columns: 1fr;
-}
-.moodboards ul li img{
-  height: 10rem;
+
+.ui-kit ul {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;  
 }
 
-.wireframes ul li{
- margin:0;
- padding:0;
+.ui-kit ul li img{
+  width: 100%;
 }
-.wireframes img{
-  height: 10rem;
+
+.moodboards ul {
+  display: block;
 }
-.slide-img{
-  height: 10rem;
+.moodboards ul li img{
+  margin-left: auto;
+  margin-right: auto;  
+  width: 100%;
 }
-.ui-kit ul {
-  display: inline-block;
-  
+
+.wireframes{
+  display: none;
+}
+
+.wireframes div{
+  display: block;
+  margin-left: auto;
+ 
+}
+.system-map div{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.system-map div img{
+  width: 70%;
+  height: 70%;
+  margin: 2rem;
+}
+
+.wireframes img{  
+  width: 50%;
+  height: 50%;
 }
 
 .ui-kit  img{
-  width:350px;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 50%;
+}
+
+.interactive{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.interactive img{
+  width: 30%;
+  height: 30%;
 }
 
 }
