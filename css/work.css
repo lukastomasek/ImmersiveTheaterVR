@@ -127,3 +127,39 @@ h3{
   text-align: center;
   font-family: 'Roboto';
 }
+.work{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+.moodboards ul li{
+  display:grid;
+  grid-template-columns: 1fr;
+}
+.moodboards ul li img{
+  height: 10rem;
+}
+
+.wireframes ul li{
+ margin:0;
+ padding:0;
+}
+.wireframes img{
+  height: 10rem;
+}
+.slide-img{
+  height: 10rem;
+}
+.ui-kit ul {
+  display: inline-block;
+  
+}
+
+.ui-kit  img{
+  width:350px;
+}
+
+}
+
+
