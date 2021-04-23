@@ -53,6 +53,9 @@ button:hover{
   background-color: var(--secondary-col);
   cursor: pointer;
 }
+.team-a{
+  display: none;
+}
 
 .main-p{
   text-align: center;
@@ -232,19 +235,12 @@ h4{
   .header{
    display: none;
   }
- 
   .main-p{
     font-size: 1.5rem;
-  }
-  .detials li{
-    display: inline-block;
-    padding: 0;
-    margin: 0;
   }
   h2{
     font-size: 1.5rem;
   }
-
 .about,
 .work{
   margin-top: 5rem;
@@ -253,14 +249,61 @@ h4{
   padding-bottom: 1rem;
 }
 
-
-
+.screens{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .screens ul li img{
+  width: 100%;
+}
+/* .screens ul li img{
   width: 300px;
   height: 300px;
   position: relative;
   right: 1rem;
+} */
+.detials{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.detials ul{
+  height: 30px;
+  width: 100px;
+  color: white;
+}
+.team-a{
+  display: flex;
+  position: absolute;
+  padding-top: 1rem;
+  left: 50%;
 }
 
+.team-a a{
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
 
+.team-a:hover{
+  color: var(--secondary-col)
+}
+
+.team-h{
+  font-size: 2rem;
+}
+.teams ul{
+  display: block;
+}
+.info{
+  text-align: center;
+}
+
+.container p{
+  text-align: center;
+  margin-bottom: 1rem;
+}
 }
