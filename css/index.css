@@ -257,12 +257,7 @@ h4{
 .screens ul li img{
   width: 100%;
 }
-/* .screens ul li img{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  right: 1rem;
-} */
+
 .detials{
   display: block;
   margin-left: auto;
@@ -297,6 +292,7 @@ h4{
 }
 .teams ul{
   display: block;
+  margin-left: .75rem;
 }
 .info{
   text-align: center;
@@ -305,5 +301,13 @@ h4{
 .container p{
   text-align: center;
   margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+.card:hover{
+  transform: scale(1.05);
 }
 }
